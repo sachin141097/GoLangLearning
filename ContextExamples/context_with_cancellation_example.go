@@ -13,10 +13,20 @@ func sleepAndTalk(ctx context.Context, t time.Duration, m string) {
 	case <-time.After(t):
 		fmt.Println(m)
 	case <-ctx.Done():
-		fmt.Println("Context cancelled")
+		fmt.Println(ctx.Err())
 	}
 }
-func main() {
+func withTimeout() {
+	ctx := context.Background()
+	ctx, cancel := context.WithTimeout(ctx, time.Second)
+	defer cancel()
+	sleepAndTalk(ctx, 5*time.Second, "Hello with Timeout")
+}
+func background() {
+	ctx := context.Background()
+	sleepAndTalk(ctx, 5*time.Second, "Hello with background")
+}
+func withCancel() {
 	ctx := context.Background()
 	ctx, cancel := context.WithCancel(ctx)
 	go func() {
@@ -24,5 +34,10 @@ func main() {
 		s.Scan()
 		cancel()
 	}()
-	sleepAndTalk(ctx, 5*time.Second, "hello")
+	sleepAndTalk(ctx, 5*time.Second, "Hello with cancel")
+}
+func main() {
+	background()
+	withCancel()
+	withTimeout()
 }
