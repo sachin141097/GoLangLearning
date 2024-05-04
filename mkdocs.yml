@@ -25,6 +25,8 @@ theme:
         name: Switch to light mode    
       primary: teal
       accent: lime
+markdown_extensions:
+  - tables
 
 copyright: |
   &copy; 2024 <a href="https://github.com/sachin141097"  target="_blank" rel="noopener">Sachin Rana</a>
