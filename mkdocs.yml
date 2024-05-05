@@ -4,7 +4,6 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
-    - toc.integrate
     - navigation.top
     - search.suggest
     - search.highlight
@@ -25,8 +24,24 @@ theme:
         name: Switch to light mode    
       primary: teal
       accent: lime
+plugins:
+  mkdocstrings:
+    handlers:
+      python:
+        options:
+          show_root_members_full_path: true
+          show_symbol_type_toc: true
+          show_symbol_type_heading: true
+          show_submodules: true
+          show_docstring_attributes: false
+          separate_signature: true
 markdown_extensions:
-  - tables
+  toc:
+    permalink: true
+  
+nav:
+- Home: index.md
+- python.md
 
 copyright: |
   &copy; 2024 <a href="https://github.com/sachin141097"  target="_blank" rel="noopener">Sachin Rana</a>
