@@ -1,10 +1,7 @@
-site_name: GoLang Learning
+site_name: DSA Problem Solutions
 theme:
   name: material
   features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.top
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -24,24 +21,25 @@ theme:
         name: Switch to light mode    
       primary: teal
       accent: lime
-plugins:
-  mkdocstrings:
-    handlers:
-      python:
-        options:
-          show_root_members_full_path: true
-          show_symbol_type_toc: true
-          show_symbol_type_heading: true
-          show_submodules: true
-          show_docstring_attributes: false
-          separate_signature: true
 markdown_extensions:
-  toc:
-    permalink: true
+  - toc:
+      permalink: true
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  
   
 nav:
-- Home: index.md
-- python.md
+- Overview:
+  - Overview/index.md
+  - Arrays:
+    - Arrays/index.md
+    - 1. Right Rotate Array: Arrays/rotate_array_189/README.md
+    - 2. Largest Element in Array: Arrays/largest_element_in_array/README.md
+    - 3. Left Rotate Array: Arrays/left_rotate_array/README.md
+
 
 copyright: |
   &copy; 2024 <a href="https://github.com/sachin141097"  target="_blank" rel="noopener">Sachin Rana</a>
