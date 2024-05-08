@@ -16,10 +16,10 @@ rotate 3 steps to the right: [5,6,7,1,2,3,4]
 
 ## Solution
 === "Python"
-    ```python
+    ```python linenums="1"
     --8<-- "Array/right_rotate_array.py"
     ```
 === "Go"
-    ```go
+    ```go linenums="1"
     --8<-- "RightRotateArray/main.go"
     ```

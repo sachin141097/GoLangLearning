@@ -12,6 +12,6 @@ Example:
 
 ## Solution
 === "Go"
-    ```go
+    ```go linenums="1"
     --8<-- "LeftRotateArray/main.go"
     ```

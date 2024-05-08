@@ -11,10 +11,10 @@ Explanation: From the array {1, 2, 3, 4, 5}, the largest element is 5.
 
 ## Solution
 === "Python"
-    ```python
+    ```python linenums="1"
     --8<-- "Array/largest_in_array.py"
     ```
 === "Go"
-    ```go
+    ```go linenums="1"
     --8<-- "LargestElement/main.go"
     ```
