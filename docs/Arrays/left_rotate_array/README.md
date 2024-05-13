@@ -11,6 +11,11 @@ Example:
 'k' = 3  rotated array = [4,5,1,2,3] and so on.
 
 ## Solution
+=== "Python"
+    ```python linenums="1"
+    --8<-- "Array/left_rotate_array.py"
+    ```
+
 === "Go"
     ```go linenums="1"
     --8<-- "LeftRotateArray/main.go"
