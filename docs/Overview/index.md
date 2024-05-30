@@ -1,5 +1,5 @@
 # Description
-This contains DSA problem solutions in python and Golang
+This contains DSA problem solutions in Python,Golang and Java
 
 ## Platforms
 - Leetcode

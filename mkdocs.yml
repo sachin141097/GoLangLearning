@@ -66,6 +66,8 @@ nav:
     - 4. Second Largest Element: Arrays/second_largest_element/README.md
     - 5. Move Zeros: Arrays/move_zeros_to_end/README.md
     - 6. SubArray With Sum K: Arrays/subarray_with_sum_k/README.md
+    - 7. Two Sum: Arrays/two_sum/README.md
+    - 8. Transpose Matrix: Arrays/transpose_matrix/README.md
 
 copyright: |
   &copy; 2024 <a href="https://github.com/sachin141097"  target="_blank" rel="noopener">Sachin Rana</a>
